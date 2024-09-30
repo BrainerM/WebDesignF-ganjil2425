@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Practice</title>
+    </head>
+    <body>
+        <h1>HTML Form Example: Registration Form</h1>
+
+        <p>Create a new account</p>
+
+        <form>
+            <table border="1">
+                <tr>
+                    <td><label for="firstname">FirstName</label></td>
+                    <td><input type="text" name="firstname" id="firstname"></td>
+
+                    <td><label for="lastname">LastName</label></td>
+                    <td><input type="text" name="lastname" id="lastname"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobilenumber">MobileNumber</label></td>
+                    <td><input type="number" name="mobilenumber" id="mobilenumber"></td>
+                
+                    <td><label for="email">EmailAdress</label></td>
+                    <td><input type="email" name="emailAdress" id="emailAdress"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="password" id="password"></td>
+
+                    <td><label for="birthday">Birthday</label></td>
+                    <td><input type="date" name="birthday" id="birthday"></td>
+                </tr>
+                <tr>
+                    <td><label for="prodi">Program of Study</label></td>
+                    <td>
+                        <select name="prodi" id="prodi">
+                            <option value="IF">Informatika</option>
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="dkv">DKV</option>
+                        </select>
+                    </td>
+
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="male"> male
+                        <input type="radio" name="gender" id="gender" value="female"> female
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="hobby">Hobby</label>
+                        <br>
+                        <input type="checkbox" name="hobby" id="hobby" value="programming">programming
+                        <input type="checkbox" name="hobby" id="hobby" value="database">database
+                        <input type="checkbox" name="hobby" id="hobby" value="networking">Networking
+                        <input type="checkbox" name="hobby" id="hobby" value="security">Security
+                        <input type="checkbox" name="hobby" id="hobby" value="multimedia">Multimedia
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html>
