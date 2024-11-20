@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-final-style.css">
+    <title>Dashboard Kesehatan</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <header class="header">
+        <div class="header__search">Cari Informasi Kesehatan...</div>
+        <div class="header__user-profile">
+          <div class="user-profile">
+            <img src="img/tirta.jpeg" alt="User Avatar">
+            <div class="user-info">
+              <h4>Dr. Tirta</h4>
+              <p>Dokter Umum</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <aside class="sidenav">
+        <div class="sidenav__logo">
+          <img src="img/assistance.png" alt="Medical Logo">
+        </div>
+        
+        <nav class="sidenav__menu">
+          <ul>
+            <li class="sidenav__item active">
+              <i class="fas fa-home"></i>
+              <span>Dashboard</span>
+            </li>
+            <li class="sidenav__item">
+              <i class="fas fa-heartbeat"></i>
+              <span>Pasien</span>
+            </li>
+            <li class="sidenav__item">
+              <i class="fas fa-notes-medical"></i>
+              <span>Rekam Medis</span>
+            </li>
+            <li class="sidenav__item">
+              <i class="fas fa-calendar-check"></i>
+              <span>Jadwal Konsultasi</span>
+            </li>
+            <li class="sidenav__item">
+              <i class="fas fa-cog"></i>
+              <span>Pengaturan</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div class="main-header__heading">Selamat Datang, Dr. Tirta</div>
+          <div class="main-header__updates">Update Kesehatan Terkini</div>
+        </div>
+        <div class="main-overview">
+          <div class="overviewcard">
+            <img src="img/examination.png" alt="Pasien Icon">
+            <div class="overviewcard__info">
+              <h3>256</h3>
+              <p>Total Pasien</p>
+            </div>
+          </div>
+          <div class="overviewcard">
+            <img src="img/medical-history.png" alt="Rekam Medis Icon">
+            <div class="overviewcard__info">
+              <h3>128</h3>
+              <p>Rekam Medis Baru</p>
+            </div>
+          </div>
+          <div class="overviewcard">
+            <img src="img/doctor-patient.png" alt="Konsultasi Icon">
+            <div class="overviewcard__info">
+              <h3>42</h3>
+              <p>Jadwal Konsultasi</p>
+            </div>
+          </div>
+          <div class="overviewcard">
+            <img src="img/healthcare.png" alt="Pertumbuhan Kesehatan Icon">
+            <div class="overviewcard__info">
+              <h3>+15%</h3>
+              <p>Peningkatan Kesehatan</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-cards">
+          <div class="card report-card"> 
+            <h2>Laporan Konsultasi Mingguan</h2>
+            <div class="consultation-summary">
+              <div class="summary-item">
+                <span>Total Konsultasi</span>
+                <strong>25</strong>
+              </div>
+              <div class="summary-item">
+                <span>Konsultasi Selesai</span>
+                <strong>20</strong>
+              </div>
+              <div class="summary-item">
+                <span>Konsultasi Belum Selesai</span>
+                <strong>5</strong>
+              </div>
+            </div>
+          </div>
+          <div class="card new-patients">
+            <div class="card-header">
+                <h2>Pasien Terbaru</h2>
+                <span class="total-patients">Total: 2</span>
+            </div>
+            <table class="patient-table">
+                <thead>
+                    <tr>
+                        <th>Nama Pasien</th>
+                        <th>Jenis Pemeriksaan</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tn. Budi</td>
+                        <td>Pemeriksaan Umum</td>
+                        <td><span class="status-selesai">Selesai</span></td>
+                        <td>
+                            <button class="btn-detail">Detail</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ny. Ani</td>
+                        <td>Konsultasi</td>
+                        <td><span class="status-proses">Proses</span></td>
+                        <td>
+                            <button class="btn-detail">Detail</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          <div class="card health-cases">
+            <h2>Kasus Kesehatan Terbaru</h2>
+            <div class="case-item">
+              <div class="case-icon">
+                <img src="img/sneezing.png" alt="Flu Icon" class="case-image">
+              </div>
+              <div class="case-details">
+                <h3>Flu Ringan</h3>
+                <div class="case-stats">
+                  <span>37 kasus</span>
+                  <span class="trend-up">↑ 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-item">
+              <div class="case-icon">
+                <img src="img/hypertension.png" alt="hipertensi Icon" class="case-image">
+              </div>
+              <div class="case-details">
+                <h3>Hipertensi</h3>
+                <div class="case-stats">
+                  <span>21 kasus</span>
+                  <span class="trend-stable">→ Stabil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2024 Klinik Sehat</div>
+        <div class="footer__signature">Kesehatan Anda Prioritas Kami</div>
+      </footer>
+    </div>
+  </body>
+</html>
